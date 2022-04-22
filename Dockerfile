@@ -1,4 +1,4 @@
-FROM gradle:jdk11-alpine AS builder
+FROM gradle:jdk11 AS builder
 
 COPY . /out
 WORKDIR /out
