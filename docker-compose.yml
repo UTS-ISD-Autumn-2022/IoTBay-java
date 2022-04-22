@@ -9,4 +9,15 @@ services:
     ports:
       - 5432:5432
     volumes:
-      - ./db:/var/lib/postgresql
+      - ./sql:/var/lib/postgresql
+
+  server:
+    container_name: iotbay-server
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+      - 9990:9990
+    depends_on:
+      - database

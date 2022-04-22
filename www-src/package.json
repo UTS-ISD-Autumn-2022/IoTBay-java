@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "scss": "parcel build scss/style.scss --dist-dir ../src/main/webapp/",
-    "js": "parcel build js/index.js --dist-dir ../src/main/webapp/"
+    "scss": "parcel build scss/style.scss --dist-dir ../src/main/webapp/static/",
+    "js": "parcel build js/index.js --dist-dir ../src/main/webapp/static/"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.4",
