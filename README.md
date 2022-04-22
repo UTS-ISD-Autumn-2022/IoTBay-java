@@ -14,6 +14,18 @@ from here <https://adoptium.net/temurin/releases>
 To run the app I think the easiest way and the best way due to consistency is
 to use the included docker instances.
 
+## Build
+
+Run the command `./gradlew war` on macos or linux
+
+or run the command `.\gradlew.bat war` on windows
+
+## Testing
+
+Run the command `./gradlew test` on macos or linux
+
+or run the command `.\gradlew.bat test` on windows
+
 ## Run through docker
 
 1. Install docker <https://docs.docker.com/get-docker/>
