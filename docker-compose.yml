@@ -9,7 +9,8 @@ services:
     ports:
       - 5432:5432
     volumes:
-      - ./sql:/var/lib/postgresql
+      - ./db:/var/lib/postgresql
+      - ./sql:/docker-entrypoint-initdb.d
 
   server:
     container_name: iotbay-server
