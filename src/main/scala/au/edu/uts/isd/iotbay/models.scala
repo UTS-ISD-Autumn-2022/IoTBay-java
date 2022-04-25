@@ -3,23 +3,16 @@ package au.edu.uts.isd.iotbay.models:
     import scala.beans.BeanProperty
     import java.util.UUID
 
-    class Role(
-        @BeanProperty
-        val Id: UUID
-    ):
-        @BeanProperty
-        var Name: String = _
+    import com.github.t3hnar.bcrypt._
 
-    class User:
-        @BeanProperty
-        var Id: UUID = _
+    case class Role(Id: UUID, Name: String)
 
-        @BeanProperty
-        var Username: String = _
+    case class UserCredential(
+                               Id: UUID,
+                               Username: String,
+                               PasswordHash: String,
+                               Role: Role,
+                               firstName: String,
+                               lastName: String)
 
-        @BeanProperty
-        var PasswordHash: String = _
-
-        @BeanProperty
-        var Role: Role = _
 
