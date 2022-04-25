@@ -3,14 +3,14 @@ package au.edu.uts.isd.iotbay.models:
     import scala.beans.BeanProperty
     import java.util.UUID
 
-    object Role:
+    class Role(
         @BeanProperty
-        var Id: UUID = _
-
+        val Id: UUID
+    ):
         @BeanProperty
         var Name: String = _
 
-    object User:
+    class User:
         @BeanProperty
         var Id: UUID = _
 
@@ -22,5 +22,4 @@ package au.edu.uts.isd.iotbay.models:
 
         @BeanProperty
         var Role: Role = _
-
 
